@@ -1,0 +1,65 @@
+﻿<Window x:Class="Calculadora.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculadora"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="640" Width="420">
+    <Grid >
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+           
+        </Grid.RowDefinitions>
+
+        <Button Grid.Column="0" Grid.Row="8" FontSize="26">---</Button>
+        <Button Grid.Column="1" Grid.Row="8" FontSize="26" Click="Button_Click">0</Button>
+        <Button Grid.Column="2" Grid.Row="8" FontSize="26">---</Button>
+        <Button Grid.Column="3" Grid.Row="8" FontSize="26" Click="Button_Igual">=</Button>
+
+        <Button Grid.Column="0" Grid.Row="7" FontSize="26" Click="Button_Click">1</Button>
+        <Button Grid.Column="1" Grid.Row="7" FontSize="26" Click="Button_Click">2</Button>
+        <Button Grid.Column="2" Grid.Row="7" FontSize="26" Click="Button_Click">3</Button>
+        <Button Grid.Column="3" Grid.Row="7" FontSize="26" Click="Button_Suma">+</Button>
+
+        <Button Grid.Column="0" Grid.Row="6" FontSize="26" Click="Button_Click">4</Button>
+        <Button Grid.Column="1" Grid.Row="6" FontSize="26" Click="Button_Click">5</Button>
+        <Button Grid.Column="2" Grid.Row="6" FontSize="26" Click="Button_Click">6</Button>
+        <Button Grid.Column="3" Grid.Row="6" FontSize="26" Click="Button_Resta">-</Button>
+
+        <Button Grid.Column="0" Grid.Row="5" FontSize="26" Click="Button_Click">7</Button>
+        <Button Grid.Column="1" Grid.Row="5" FontSize="26" Click="Button_Click">8</Button>
+        <Button Grid.Column="2" Grid.Row="5" FontSize="26" Click="Button_Click">9</Button>
+        <Button Grid.Column="3" Grid.Row="5" FontSize="26" Click="Button_Mult">x</Button>
+
+        <Button Grid.Column="0" Grid.Row="4" FontSize="26" >---</Button>
+        <Button Grid.Column="1" Grid.Row="4" FontSize="26" Click="Button_Potencia">x²</Button>
+        <Button Grid.Column="2" Grid.Row="4" FontSize="26" >---</Button>
+        <Button Grid.Column="3" Grid.Row="4" FontSize="26" Click="Button_Dividir">/</Button>
+
+        <Button Grid.Column="0" Grid.Row="3" FontSize="26" Click="Button_Porcentaje">%</Button>
+        <Button Grid.Column="1" Grid.Row="3" FontSize="26" Click="Button_BorrarCE">CE</Button>
+        <Button Grid.Column="2" Grid.Row="3" FontSize="26" Click="Button_BorrarC">C</Button>
+        <Button Grid.Column="3" Grid.Row="3" FontSize="26" Click="Button_Borrar">⌫</Button>
+
+        <TextBox Name="Pantalla" Grid.ColumnSpan="4" Grid.RowSpan="3" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontSize="65">0</TextBox>
+        <TextBox Name="PantallaDos" Grid.ColumnSpan="4" Grid.RowSpan="2" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontSize="45" Foreground="Gray"></TextBox>
+    </Grid>
+</Window>
